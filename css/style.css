@@ -1,0 +1,271 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+
+@font-face {
+    font-family: NunitoSansL;
+    src: url(../letras/NunitoSans-Light.ttf);
+}
+
+@font-face {
+    font-family: NunitoSansR;
+    src: url(../letras/NunitoSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: NunitoSansB;
+    src: url(../letras/NunitoSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: NunitoSansEB;
+    src: url(../letras/NunitoSans-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: OpenSansL;
+    src: url(../letras/OpenSans-Light.ttf);
+}
+
+@font-face {
+    font-family: OpenSansR;
+    src: url(../letras/OpenSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: OpenSansB;
+    src: url(../letras/OpenSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: LilyScriptOneR ;
+    src: url(../letras/LilyScriptOne-Regular.ttf);
+}
+header {
+    position: sticky; 
+    top: 0;               
+    width: 100%;     
+    z-index: 1000;   
+    overflow: hidden;
+    box-sizing: border-box;
+    
+    
+}
+header img{
+    width: 100%;
+    height: auto;
+}
+#logotipoSlogam{
+    position: absolute; 
+    top: 20%; 
+    left: 10%;
+    color: white;
+    text-align: left;
+}
+
+#logotipoSlogam img{
+    width: 60%;
+}
+
+#slogam{
+    color: white;
+    font-family: OpenSansL;
+    margin-top: 10%;
+    font-size: 120%;
+    opacity: 0; 
+    transition: opacity 2s ease-in; 
+}
+#mainh4{
+    text-align: center;
+    color: #B48D05;
+    font-family: OpenSansB;
+    padding-top: 10%;
+    padding-left:6%;
+    padding-right: 6%;
+
+}
+#mainServicos img{
+    width: 100%;
+    height: auto;
+}
+
+#mainNossaEquipe{
+    text-align: center;
+    padding-top: 7%;
+    padding-bottom: 5%;
+}
+
+#mainNossaEquipeTexto{
+    padding-top: 1%;
+    padding-left:5%;
+    padding-right:5%;
+}
+
+#mainNossaEquipeFoto img{
+    
+    width: 60%;
+    display: block; 
+    margin: 0 auto; 
+}
+#mainTutoriais{
+    padding-top: 6%;
+    padding-bottom: 10%;
+    text-align: center;
+}
+#mainTutoriaisTexto{
+    padding-top: 3%;
+    padding-left:5%;
+    padding-right:5%;
+    
+}
+
+#mainTutoriaisFoto img{
+
+    width: 60%;
+    display: block; 
+    margin: 0 auto;
+   
+}
+
+h5{
+    color:#B48D05;
+    font-family: OpenSansR;
+
+}
+h6{
+    font-family: OpenSansR;
+    color: #2b538c;
+}
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+#modalp{
+    color: black;
+
+}
+#chamadah1{
+    text-align: center;
+    color:#B48D05;
+    padding-bottom: 4%;
+    opacity: 0; 
+    transform: translateY(50px); 
+    transition: opacity 2s ease-in-out, transform 0.5s ease-in-out;
+    text-align: center;  
+}
+
+footer{
+    background-color:#00275D;
+}
+
+
+#contatos{
+    padding-top: 5%;
+    font-family: NunitoSansL;
+    padding-left: 5%;
+    
+}
+
+#contatos img{
+    width: 15%;
+    padding-right: 5%;
+   
+
+}
+#contatosmidias{
+    padding-top: 5%;
+    font-family: NunitoSansL;
+    padding-left: 17%;
+    
+}
+
+#contatosmidias img{
+    width: 22%;
+    padding-right: 5%;
+   
+
+}
+
+#mapa{
+    font-family: NunitoSansB;
+    text-align: center;
+    padding-top: 5%;
+}
+
+#mapa img{
+    width: 60%;
+    transition: transform 0.3s ease;
+}
+#mapa:hover img{
+    transform: scale(1.1); 
+    
+}
+
+p{
+    font-family: NunitoSansB;
+    color: white;
+}
+p:hover{
+    color:#B48D05;
+      
+}
+#produzidopor{
+    font-family:NunitoSansR ;
+    color: white;
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 0.1%;
+   
+}
+#produzidopor hr {
+    margin: 10px auto;
+    width: 90%;
+
+}
+
+#empresa{
+    color:white;
+
+}
+
+#empresa:hover{
+    color: #B48D05;
+
+}
+
+
+

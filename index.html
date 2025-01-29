@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Casa do Notebook</title>
+    
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+    <header>
+        <img src="imgs/principal2.png" alt="">
+        <div id="logotipoSlogam">
+            <img src="imgs/logotipo.png" alt="logotipo">
+            <p id="slogam">"Confiança, qualidade e agilidade em um só lugar.<br>
+             Seu dispositivo em boas mãos!"</p>
+        </div>
+           
+    </header>
+
+    <main>
+     
+        <div id="mainServicos" >
+            <h4 id="mainh4">Oferecemos serviço rápido,seguro e de qualidade.Seja um notebook, smartphone, tablet ou computador,  estamos prontos para resolver o seu problema...</h4>
+            <img src="imgs/serviçosProdutos.png" alt="servicosProdutos">
+            
+        </div>
+        <div  id="mainNossaEquipe">
+            <div class="container-fluid">
+                <div class="row">  
+                    <div class="col-md-6"id="mainNossaEquipeTexto">
+                        <h4 id="mainh4">Nossa Equipe</h4>
+                        <h6>Com técnicos especializados , garantimos um serviço excepcional para o seu dispositivo. Nosso compromisso é devolver seu equipamento funcionando perfeitamente, com a rapidez e precisão que você merece.</h6>
+                    </div>
+
+                    <div class="col-md-6" id="mainNossaEquipeFoto">
+                            <img src="imgs/equipe.png" alt="equipe">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr style="border: none; height: 1px; background-color:black; margin: 10px auto;
+        width: 90%;">
+        <div  id="mainTutoriais">
+            <div class="container-fluid">
+                <div class="row">  
+                    <div class="col-md-6"id="mainTutoriaisTexto">
+                        <h4 id="mainh4">Tutoriais</h4>
+                        <h6>Semanalmente publicamos tutorias para ajuda-lo com pequenos consertos, conservação do seu equipamento 
+                        e dúvidas frequentes que voce pode ter...</h6>
+                    </div>
+
+                    <div class="col-md-6" id="mainTutoriaisFoto">
+                           
+                            <img src="imgs/limpeza.png" alt="limpeza" id="imagemLimpeza" style="cursor: pointer;">
+                            <br>
+                            <h5 id="h5main">Como limpar a Tel do seu aparelho</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="modalLimpeza" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                
+                <p id="modalp">Aqui estão algumas dicas para manter seu dispositivo limpo e em bom funcionamento. Cuide do seu aparelho!</p> 
+                
+            </div>
+        </div>
+        
+    </main>
+    <div>
+            <h1 id="chamadah1">Venha Conhecer</h1>
+    </div>
+    <footer>
+       
+    <div class="container-fluid" >
+            <div class="row">
+                <div class="col-md-4" id="contatos">
+                    <a href=""  style="text-decoration: none;">
+                        <p><img src="imgs/whatsapp.png" alt="whatsapp">913 582 883</p>
+                    </a>
+                    <br><br>
+                    <a href=""  style="text-decoration: none;">
+                        <p><img src="imgs/email.png" alt="email">casanotebook@gmail.com.</p>
+                    </a>
+                </div>
+
+                <div class="col-md-4" id="mapa">
+                    <a href="https://www.google.com/maps/dir/?api=1&origin=&destination=Av+Faria+Lima+2000,+SaoPaulo&travelmode=driving" target="_blank"style="text-decoration: none;">
+                        <img src="imgs/mapa.png" alt="localizacaocomercio">
+                        <br><br>
+                        <p>Av Faria Lima 2000 cj 1 sala 20<br>
+                        São Paulo-SP</p>
+                    </a>
+                         
+                    
+                </div>
+
+                <div class="col-md-4" id="contatosmidias" >
+                    
+                    <a href="" style="text-decoration: none;">
+                        <p><img src="imgs/facebook.png" alt="facebook">Facebook</p>
+                    </a>
+
+                    <br><br>
+
+                    <a href=""  style="text-decoration: none;">
+                        <p><img src="imgs/instagram.png" alt="instagram">Instagram</p>
+                    </a>
+
+                </div>
+            
+            </div>
+
+        </div>
+        
+        
+        <div id="produzidopor">
+            <hr style="border: none; height: 1px; background-color: white">
+            
+            Website elaborado por<a href="https://cubiccoders.com/CubicCoders/" id="empresa"  style="text-decoration: none"> CUBIC CODERS-</a><span id="ano">2024</span>
+
+        </div>
+    </footer>
+    
+    <script>
+
+document.addEventListener("DOMContentLoaded", function () {
+    const slogan = document.getElementById("slogam");
+    const chamada = document.getElementById("chamadah1");
+
+   
+    setTimeout(() => {
+        slogan.style.opacity = "1";
+    }, 500); 
+
+    
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                
+                chamada.style.opacity = "1";
+                chamada.style.transform = "translateY(0)";
+            } else {
+                
+                chamada.style.opacity = "0";
+                chamada.style.transform = "translateY(50px)";
+            }
+        });
+    });
+
+    
+    observer.observe(chamada);
+
+
+    window.addEventListener("scroll", () => {
+        const header = document.querySelector("header");
+
+        if (window.scrollY > 0) {
+            header.style.height = "25vh";
+            slogan.style.display = "none";
+        } else {
+            header.style.height = "100%";
+            slogan.style.display = "block";
+        }
+    });
+
+    const imagemLimpeza = document.getElementById("imagemLimpeza");
+const modal = document.getElementById("modalLimpeza");
+const closeBtn = document.getElementsByClassName("close")[0];
+
+
+imagemLimpeza.onclick = function() {
+    modal.style.display = "block"; 
+}
+
+
+closeBtn.onclick = function() {
+    modal.style.display = "none"; 
+}
+
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";  
+    }
+}
+   
+    const anoElemento = document.getElementById('ano');
+    const anoAtual = new Date().getFullYear();
+    anoElemento.textContent = anoAtual;
+});
+
+    </script>
+    
+</body>
+</html>
