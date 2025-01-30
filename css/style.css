@@ -266,6 +266,75 @@ p:hover{
     color: #B48D05;
 
 }
+@media (max-width: 767px) {
+    header img{
+        width: 250%;
+        
+    }
+    #mainServicos img{
+        
+        width: 100%;
+        height: auto;
+    }
+    #contatos{
+        padding-top: 5%;
+        font-family: NunitoSansL;
+        padding-left: 5%;
+        
+    }
+    #contatosmidias{
+        padding-top: 5%;
+        font-family: NunitoSansL;
+        padding-left: 5%;
+        
+    }
+    
+    #contatos img{
+        width: 12%;
+        padding-right: 5%;
+       
+    }
+    #contatosmidias img{
+        width: 13%;
+        padding-right: 5%;
+       
+    }
+    
+    #mapa{
+        font-family: NunitoSansB;
+        text-align: center;
+        padding-top: 5%;
+    }
+    
+    #mapa img{
+        width: 60%;
+        transition: transform 0.3s ease;
+    }
+    #mapa:hover img{
+        transform: scale(1.1); 
+        
+    }
+    
+    p{
+        font-size: 80%;
+    }
+    p:hover{
+        color:#B48D05;
+          
+    }
+    #psup{
+    margin-bottom:-10%;
+    }
+    
+}
 
+@media (min-width: 1910px) {
+    
+    
+            
+}
+
+
+        
 
 
