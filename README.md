@@ -4,4 +4,4 @@ Este é o repositório do projeto **Casa do Notebook**. Você pode acessar o sit
 
 Desenvolvimento by CUBIC CODERS -  https://www.cubiccoders.com/
 
-[Visite o site no GitHub Pages]( https://www.cubiccoders.com/)
+[Visite o site no GitHub Pages](  https://cubiccoders.github.io/ProjetoCasaDoNotebook/)
